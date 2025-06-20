@@ -1,116 +1,81 @@
-# ChildGuard: A Specialized Dataset for Combatting Child-Targeted Hate Speech
+# 🛡️ ChildGuard: A Specialized Dataset for Combatting Child-Targeted Hate Speech
 
-![ChildGuard Logo](https://img.shields.io/badge/dataset-childguard-blue)  
-*Making the digital world safer for children through data-driven research.*
-
----
-
-## Overview
-
-**ChildGuard** is a large-scale, multilingual dataset curated to advance research in detecting hate speech specifically targeting children. With 351,877 annotated social media posts, ChildGuard fills a critical gap by providing age-specific, context-rich, and expert-validated resources for developing robust hate speech detection systems.
+![ChildGuard Banner](https://imgur.com/placeholder-banner.png)
 
 ---
 
-## Key Features
+## 📚 Overview
 
-- **Size & Scope:** 351,877 social media posts from Twitter, Reddit, and YouTube
-- **Multilingual:** English and Spanish content
-- **Child-Focused:** Explicit labeling for three age groups:
+**ChildGuard** is a large-scale, multilingual dataset meticulously curated to advance research on hate speech detection specifically targeting children. With over **350,000** annotated social media posts, ChildGuard fills the critical gap in age-specific, context-rich, and ethically sourced data for online safety research.
+
+---
+
+## ✨ Key Features
+
+- **Size & Scope:** 351,877 posts from Twitter, Reddit, and YouTube
+- **Multilingual:** English & Spanish
+- **Child-Focused:** Explicitly targets hate speech directed at children, segmented by age:
   - Teens (13–17)
   - Pre-teens (11–12)
   - Younger children (under 11)
 - **Rich Annotations:**
-  - Age group, sentiment, polarity, platform, explicit/implicit hate
+  - Age group labels
   - Lexical and contextual features
-- **Expert Annotation:** High inter-annotator agreement (Cohen’s Kappa: 0.82, Krippendorff’s Alpha: 0.79)
-- **Ethical & Privacy-Compliant:** All personal data anonymized and sensitive content handled per ethical standards
+  - Sentiment & polarity scores
+  - Explicit vs. implicit hate
+- **Expert-Validated:** High inter-annotator agreement (Cohen’s Kappa = 0.82, Krippendorff’s Alpha = 0.79)
+- **Ethical & Privacy-Compliant:** All personal data anonymized and sensitive content handled per ethical guidelines
 
 ---
 
-## Dataset Structure
+## 🗂️ Dataset Structure
 
-| Column         | Description                                                      |
-|----------------|------------------------------------------------------------------|
-| text           | User-generated social media post                                 |
-| actual_class   | Ground truth label (Hate/Non-Hate)                               |
-| predicted_class| Model-predicted label                                            |
-| Age_Group      | Targeted age group (Teens, Pre-teens, Younger children)          |
-| Hate           | Binary indicator: 1 for Hate, 0 for Non-Hate                     |
+| Column           | Description                                             |
+|------------------|--------------------------------------------------------|
+| text             | User-generated social media post                       |
+| actual_class     | Ground truth label (Hate/Non-Hate)                     |
+| predicted_class  | Model-predicted label                                  |
+| Age_Group        | Age group (Teens, Pre-teens, Younger children)         |
+| Hate             | Binary indicator: 1 for Hate, 0 for Non-Hate           |
+| ...              | Additional features: sentiment, polarity, platform, etc.|
 
 - **Data splits:** Training (70%), Validation (15%), Testing (15%)
 - **Subsets:** Contextual, Lexical, and Full ChildGuard Dataset
 
 ---
 
-## Download
+## 🚀 Download
 
-- **Sample & Annotation Guidelines:** [Sample Data (GoFile)](https://gofile.io/d/znYKxX)
-- **Full Dataset:** To be released upon acceptance (see [ARR_MAY_2025_Dataset.pdf][1])
-
----
-
-## Usage
-
-ChildGuard is intended for academic, research, and non-commercial use.  
-Potential applications include:
-
-- Training and benchmarking hate speech detection models
-- Studying age-specific and platform-specific hate speech trends
-- Developing safer, context-aware moderation tools
+- **Sample data & annotation guidelines:** [Sample Download](https://gofile.io/d/znYKxX)
+- **Full dataset:** To be released upon acceptance
 
 ---
 
-## Baseline Benchmarks
+## 🛠️ Usage
 
-| Model          | Accuracy (Full) | F1 Score (Full) |
-|----------------|-----------------|-----------------|
-| BERT           | 83.5%           | 82.6%           |
-| RoBERTa        | 82.0%           | 81.1%           |
-| GPT-3.5-turbo  | 80.9%           | 79.9%           |
-| LSTM           | 78.3%           | 77.1%           |
+ChildGuard is intended for academic, research, and non-commercial purposes.
 
-*See [ARR_MAY_2025_Dataset.pdf][1] for detailed results by age group and feature subset.*
+**Use Cases:**
+- Training & benchmarking hate speech detection models
+- Studying the impact of online hate on children by age group
+- Developing context-aware, platform-specific moderation tools
 
 ---
 
-## Annotation Guidelines
+## 📊 Baseline Benchmarks
 
-- **Explicit-Hate:** Direct abuse or hostile language targeting children
-- **Implicit-Hate:** Indirect hostility (sarcasm, coded language, hostile metaphors)
-- **Non-Hate:** Neutral, positive, or irrelevant content
-- **Quality Control:** Dual annotation, consensus review, and regular audits
-- **Ethics:** All PII removed; annotators trained for sensitivity and allowed to opt out of distressing content
+| Model          | Accuracy | F1 Score |
+|----------------|----------|----------|
+| BERT           | 83.5%    | 82.6%    |
+| RoBERTa        | 82.0%    | 81.1%    |
+| GPT-3.5-turbo  | 80.9%    | 79.9%    |
+| LSTM           | 78.3%    | 77.1%    |
+
+*See the paper for detailed results across age groups and feature subsets.*
 
 ---
 
-## Citation
+## 📝 Citation
 
 If you use ChildGuard in your research, please cite:
-
-
----
-
-## Ethical Statement
-
-ChildGuard was developed in strict compliance with privacy and ethical standards. All data is anonymized, and annotation was performed by trained experts under robust guidelines to ensure the safety and dignity of children represented in the data.
-
----
-
-## License
-
-Released for research and educational use only.  
-For licensing questions, please contact the authors.
-
----
-
-## Contact
-
-For questions, feedback, or collaboration inquiries, contact the corresponding author:  
-**Jiechao Gao** (jiechao@stanford.edu)
-
----
-
-*ChildGuard: Enabling safer digital spaces for children through research and innovation.*
-
----
 
