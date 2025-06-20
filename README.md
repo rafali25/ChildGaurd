@@ -15,9 +15,7 @@ A specialized dataset for detecting and analyzing child-targeted hate speech onl
 3. [Key Statistics](#key-statistics)
 4. [Data Fields](#data-fields)
 5. [Usage](#usage)
-6. [Citation](#citation)
-7. [License](#license)
-8. [Contact](#contact)
+6. [Contact](#contact)
 
 ---
 
@@ -116,12 +114,6 @@ This repository includes three key CSV files, each serving a specific subset of 
      * `Age_Group`: Annotated age category (Teens, Pre-Teens, Younger Children).
      * `Hate`: Binary indicator (1 = Hate; 0 = Non-Hate).
    * **Description:** The full combined dataset integrating both lexical and contextual annotations.
-
----
-
-## License
-
-This dataset is released under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
