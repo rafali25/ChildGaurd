@@ -23,6 +23,7 @@ A specialized dataset for detecting and analyzing child-targeted hate speech onl
 
 The **ChildGuard** dataset is a curated collection of social media and online content specifically annotated to detect hate speech aimed at minors. Built upon a range of existing corpora, ChildGuard enriches samples with age-based labels, sentiment scores, and contextual features to empower researchers and developers focused on protecting children in digital environments.
 
+**Authors**: Gautam Siddharth Kashyap, Mohammad Anas Azeez, Rafiq Ali, Zohaib Hasan Siddiqui, Jiechao Gao, Usman Naseem.
 
 ---
 
