@@ -102,13 +102,15 @@ This repository includes three key CSV files, each serving a specific subset of 
 
 If you use the ChildGuard dataset in your research, please cite our paper:
 ```
-@article{childguard2025,
-  title={ChildGuard: A Specialized Dataset for Detecting and Analyzing Child-Targeted Hate Speech Online},
-  author={Gautam Siddharth Kashyap and Mohammad Anas Azeez and Rafiq Ali and Zohaib Hasan Siddiqui and Jiechao Gao and Usman Naseem},
-  journal={arXiv preprint arXiv:2506.21613},
-  year={2025},
-  url={https://arxiv.org/abs/2506.21613v1}
+@article{kashyap2025childguard,
+  title        = {ChildGuard: A Specialized Dataset for Combatting Child-Targeted Hate Speech},
+  author       = {Kashyap, Gautam Siddharth and Azeez, Mohammad Anas and Ali, Rafiq and Siddiqui, Zohaib Hasan and Gao, Jiechao and Naseem, Usman},
+  journal      = {arXiv preprint arXiv:2506.21613v1},
+  year         = {2025},
+  doi          = {10.48550/arXiv.2506.21613},
+  url          = {https://arxiv.org/abs/2506.21613v1}
 }
+
 ```
 
 
