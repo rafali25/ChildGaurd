@@ -98,18 +98,18 @@ This repository includes three key CSV files, each serving a specific subset of 
      - `Hate`: Binary indicator (1 = Hate; 0 = Non-Hate).
    - **Description:** The full combined dataset integrating both lexical and contextual annotations.
 
-'''## Citation
+## Citation
 
 If you use the ChildGuard dataset in your research, please cite our paper:
-
+'''
 @article{childguard2025,
   title={ChildGuard: A Specialized Dataset for Detecting and Analyzing Child-Targeted Hate Speech Online},
   author={Gautam Siddharth Kashyap and Mohammad Anas Azeez and Rafiq Ali and Zohaib Hasan Siddiqui and Jiechao Gao and Usman Naseem},
   journal={arXiv preprint arXiv:2506.21613},
   year={2025},
   url={https://arxiv.org/abs/2506.21613v1}
-}'''
-
+}
+'''
 
 
 
